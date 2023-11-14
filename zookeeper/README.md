@@ -10,5 +10,5 @@ cd zookeeper
 
 Build the image
 ```
-docker build -t zookeeper:3.8.2 .
+docker build -t zookeeper:3.8.3 .
 ```
