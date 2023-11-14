@@ -3,7 +3,7 @@ FROM --platform=linux/amd64 ubuntu:22.04
 MAINTAINER DCOE <nbaleeta@unicef.org>
 
 ## Set Version & Mirror variables
-ARG VERSION=3.8.2
+ARG VERSION=3.8.3
 RUN echo $VERSION
 ARG MIRROR=https://ftp.dimensiondata.com/mirrors/www.apache.org/zookeeper
 RUN echo $MIRROR
