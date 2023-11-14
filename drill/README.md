@@ -10,7 +10,6 @@ cd drill
 
 Build the image
 ```
-docker build -t drill:1.20.3 .
+docker build -t drill:<TAG> .
 ```
 
-**PS: version 1.21.1 seems to have some breaking changes, use 1.20.3**
