@@ -1,3 +1,8 @@
+To verify the version # and mirror site, please visit this link below:
+```
+https://ftp.dimensiondata.com/mirrors/www.apache.org/zookeeper/
+```
+
 Navigate to the zookeeper direactory
 ```
 cd zookeeper
