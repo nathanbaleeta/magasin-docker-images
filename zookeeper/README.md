@@ -10,6 +10,6 @@ cd zookeeper
 
 Build the image
 ```
-docker build -t zookeeper:3.8.3 .
+docker build -t zookeeper:<TAG> .
 ```
 
