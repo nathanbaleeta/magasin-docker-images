@@ -22,7 +22,7 @@ docker buildx create tls-environment \
 ```
  docker buildx build --platform linux/amd64 -t magasinacrdev.azurecr.io/drill:1.20.3 --push .
 ```
-
+OR
 ```
  docker buildx build --platform linux/amd64 -t nbaleeta/drill:1.20.3 --push .
 ```
