@@ -1,6 +1,6 @@
 FROM --platform=linux/amd64 ubuntu:22.04
 
-ARG VERSION=1.20.3
+ARG VERSION=1.21.1
 RUN echo $VERSION
 ARG MIRROR=https://ftp.dimensiondata.com/mirrors/www.apache.org/drill
 RUN echo $MIRROR
@@ -10,6 +10,7 @@ RUN apt-get update
 RUN apt-get install --allow-downgrades --yes software-properties-common
 RUN add-apt-repository ppa:openjdk-r/ppa
 RUN apt-get update
+RUN apt-get install -y wget
 RUN apt-get install --allow-downgrades --yes openjdk-17-jdk vim
 
 # Configure User Login
@@ -20,6 +21,10 @@ ADD $MIRROR/$VERSION/apache-drill-$VERSION.tar.gz /tmp/
 RUN mkdir /opt/drill
 RUN tar -xzf /tmp/apache-drill-$VERSION.tar.gz --directory=/opt/drill --strip-components 1
 RUN rm -f /tmp/apache-drill-$VERSION.tar.gz
+
+# Install Azure Jars on the classpath
+RUN wget https://repo1.maven.org/maven2/org/apache/hadoop/hadoop-azure/2.7.7/hadoop-azure-2.7.7.jar  -P /opt/drill/jars/3rdparty
+RUN wget https://repo1.maven.org/maven2/com/microsoft/azure/azure-storage/8.0.0/azure-storage-8.0.0.jar  -P /opt/drill/jars/3rdparty
 
 ## Expose http, userport, controlport & dataport on container
 EXPOSE 8047 31010 31011 31012
