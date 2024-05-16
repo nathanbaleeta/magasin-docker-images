@@ -29,7 +29,7 @@ OR
  docker buildx build --platform linux/amd64 -t nbaleeta/drill:1.20.3 --push .
 ```
 
-### To read from docker compose yaml, json or HCL file before building, use -f flag with ```bake```
+### To read from docker compose yaml, json or HCL file instead of single Dockerfile
 ```
 docker buildx bake -f docker-compose-non-dev.yml
 docker buildx build --platform linux/amd64 -t magasinacrdev.azurecr.io/superset:3.1.0 --push .
