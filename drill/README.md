@@ -20,12 +20,19 @@ docker buildx create tls-environment \
   --bootstrap --use
 ```
 
+### To build from a single docker file
 ```
  docker buildx build --platform linux/amd64 -t magasinacrdev.azurecr.io/drill:1.20.3 --push .
 ```
 OR
 ```
  docker buildx build --platform linux/amd64 -t nbaleeta/drill:1.20.3 --push .
+```
+
+### To read from docker compose yaml, json or HCL file before building, use -f flag with ```bake```
+```
+docker buildx bake -f docker-compose-non-dev.yml
+docker buildx build --platform linux/amd64 -t magasinacrdev.azurecr.io/superset:3.1.0 --push .
 ```
 
 #### Import docker hub image into Azure container registry
