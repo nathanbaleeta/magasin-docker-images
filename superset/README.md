@@ -1,4 +1,5 @@
 **Edit the [gunicorn server](https://superset.apache.org/docs/configuration/configuring-superset/#running-on-a-wsgi-http-server) config file `run-server.sh` to reflect below**
+Reference - https://www.restack.io/docs/superset-knowledge-gunicorn-superset-application-server
 
 ```
 gunicorn \
