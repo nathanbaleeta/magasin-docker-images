@@ -16,3 +16,8 @@ gunicorn \
     --limit-request-field_size ${SERVER_LIMIT_REQUEST_FIELD_SIZE:-0} \
     "${FLASK_APP}"
 ```
+
+#### Build docker image and push to Azure container registry from docker-compose yaml file
+```
+ docker buildx build -f docker-compose-non-dev.yml --platform linux/amd64 -t magasinacrdev.azurecr.io/superset:3.1.0 --push .
+```
