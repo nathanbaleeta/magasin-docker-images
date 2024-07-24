@@ -18,8 +18,7 @@ gunicorn \
 ```
 
 #### Build docker image and push to Azure container registry from docker-compose yaml file
-
+` export DOCKER_DEFAULT_PLATFORM=linux/amd64`
 ```
- export DOCKER_DEFAULT_PLATFORM=linux/amd64
  docker buildx build -f docker-compose-non-dev.yml --platform linux/amd64 -t magasinacrdev.azurecr.io/superset:3.1.0 --push .
 ```
