@@ -1,4 +1,4 @@
-Edit the gunicorn server config to reflect below
+**Edit the gunicorn server config to reflect below**
 
 ```
 gunicorn \
