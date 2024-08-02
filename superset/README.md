@@ -1,4 +1,11 @@
+#### Quick set up
+```
+git clone https://github.com/apache/superset.git
 
+cd superset
+
+git checkout 3.1.0
+```
 
 #### Build docker image and push to Azure container registry from docker-compose yaml file. 
 #### Use bake with -f flag to specify which Docker Compose, JSON or HCL file to read from, then build image after
