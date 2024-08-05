@@ -32,7 +32,7 @@ OR
 ### To read & build from docker compose yaml, json or HCL file instead of single Dockerfile
 ```
 docker buildx bake -f docker-compose-non-dev.yml
-docker buildx build --platform linux/amd64 -t magasinacrdev.azurecr.io/superset:3.1.0 --push .
+docker buildx build --platform linux/amd64 -t magasinacrdev.azurecr.io/drill:1.20.3 --push .
 ```
 
 #### Import docker hub image into Azure container registry
