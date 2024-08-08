@@ -4,7 +4,7 @@ git clone https://github.com/apache/superset.git
 
 cd superset
 
-git checkout 3.1.0
+git checkout 4.0.0
 ```
 
 #### Build docker image from scratch and push to Azure container registry from docker-compose yaml file. 
