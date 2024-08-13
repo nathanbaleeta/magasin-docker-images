@@ -1,9 +1,9 @@
 ## Base OS
 FROM --platform=linux/amd64 ubuntu:22.04
-MAINTAINER DCOE <nbaleeta@unicef.org>
+LABEL maintainer="Nathan Baleeta nbaleeta@unicef.org"
 
 ## Set Version & Mirror variables
-ARG VERSION=3.8.3
+ARG VERSION=3.9.2
 RUN echo $VERSION
 ARG MIRROR=https://ftp.dimensiondata.com/mirrors/www.apache.org/zookeeper
 RUN echo $MIRROR
