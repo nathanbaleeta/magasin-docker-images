@@ -1,4 +1,6 @@
+
 FROM --platform=linux/amd64 ubuntu:22.04
+LABEL maintainer="Nathan Baleeta nbaleeta@unicef.org"
 
 ARG VERSION=1.21.1
 RUN echo $VERSION
