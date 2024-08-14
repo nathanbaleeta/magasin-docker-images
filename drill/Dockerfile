@@ -1,8 +1,9 @@
 
-FROM --platform=linux/amd64 ubuntu:22.04
+#FROM --platform=linux/amd64 ubuntu:22.04
+FROM ubuntu:22.04
 LABEL maintainer="Nathan Baleeta nbaleeta@unicef.org"
 
-ARG VERSION=1.21.1
+ARG VERSION=1.20.3
 RUN echo $VERSION
 ARG MIRROR=https://ftp.dimensiondata.com/mirrors/www.apache.org/drill
 RUN echo $MIRROR
