@@ -1,9 +1,10 @@
 
 
-To verify the version # and mirror site, please visit this link below:
+### To verify the version # and mirror site, please visit this link below:
 ```
 https://ftp.dimensiondata.com/mirrors/www.apache.org/zookeeper/
 ```
+### Docker image release notes
 
 | Version  | Release notes |
 | ------------- | ------------- |
