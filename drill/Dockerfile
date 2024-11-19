@@ -1,20 +1,14 @@
-
-#FROM --platform=linux/amd64 ubuntu:22.04
 FROM ubuntu:22.04
 LABEL maintainer="Nathan Baleeta nbaleeta@unicef.org"
 
-ARG VERSION=1.20.3
+ARG VERSION=1.21.2
 RUN echo $VERSION
 ARG MIRROR=https://ftp.dimensiondata.com/mirrors/www.apache.org/drill
 RUN echo $MIRROR
 
 # Install Pre-Requisite Packages 
-RUN apt-get update
-RUN apt-get install --allow-downgrades --yes software-properties-common
-RUN add-apt-repository ppa:openjdk-r/ppa
-RUN apt-get update
-RUN apt-get install -y wget
-RUN apt-get install --allow-downgrades --yes openjdk-17-jdk vim
+RUN apt update -y && apt upgrade -y
+RUN apt install openjdk-21-jdk vim wget -y
 
 # Configure User Login
 RUN echo 'root:drill' | chpasswd
