@@ -3,17 +3,20 @@ FROM --platform=linux/amd64 ubuntu:22.04
 LABEL maintainer="Nathan Baleeta nbaleeta@unicef.org"
 
 ## Set Version & Mirror variables
-ARG VERSION=3.9.2
+ARG VERSION=3.9.3
 RUN echo $VERSION
 ARG MIRROR=https://ftp.dimensiondata.com/mirrors/www.apache.org/zookeeper
 RUN echo $MIRROR
 
 ## Install Pre-Requisite Packages
-RUN apt-get update
-RUN apt-get install --allow-downgrades --yes software-properties-common
-RUN add-apt-repository ppa:openjdk-r/ppa
-RUN apt-get update
-RUN apt-get install --allow-downgrades --yes openjdk-17-jdk vim
+#RUN apt-get update
+#RUN apt-get install --allow-downgrades --yes software-properties-common
+#RUN add-apt-repository ppa:openjdk-r/ppa
+#RUN apt-get update
+#RUN apt-get install --allow-downgrades --yes openjdk-17-jdk vim
+
+RUN apt update -y && apt upgrade -y
+RUN apt install openjdk-21-jdk vim -y
 
 ## Configure User Login
 RUN echo 'root:drill' | chpasswd
