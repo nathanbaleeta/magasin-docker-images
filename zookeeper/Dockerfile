@@ -9,12 +9,6 @@ ARG MIRROR=https://ftp.dimensiondata.com/mirrors/www.apache.org/zookeeper
 RUN echo $MIRROR
 
 ## Install Pre-Requisite Packages
-#RUN apt-get update
-#RUN apt-get install --allow-downgrades --yes software-properties-common
-#RUN add-apt-repository ppa:openjdk-r/ppa
-#RUN apt-get update
-#RUN apt-get install --allow-downgrades --yes openjdk-17-jdk vim
-
 RUN apt update -y && apt upgrade -y
 RUN apt install openjdk-21-jdk vim -y
 
