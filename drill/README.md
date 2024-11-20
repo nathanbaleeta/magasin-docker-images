@@ -3,7 +3,7 @@ To verify the version # and mirror site, please visit this link below:
 https://ftp.dimensiondata.com/mirrors/www.apache.org/drill
 ```
 
-Navigate to the ```drill``` direactory
+Navigate to the ```drill``` directory
 ```
 cd drill
 ```
