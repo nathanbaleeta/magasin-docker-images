@@ -9,7 +9,7 @@ https://ftp.dimensiondata.com/mirrors/www.apache.org/zookeeper/
 | Version  | Release notes |
 | ------------- | ------------- |
 | 3.7.2  | Upgraded to openjdk-17-jdk  |
-| 3.9.2  | Uses Upgraded to openjdk-17-jdk but higher zookeeper version|
+| 3.9.2  | Upgraded to openjdk-17-jdk but higher zookeeper version|
 | 3.9.3  | Upgraded to openjdk-21-jdk |
 
 Navigate to the zookeeper direactory
