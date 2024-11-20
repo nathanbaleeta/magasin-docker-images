@@ -3,6 +3,12 @@ To verify the version # and mirror site, please visit this link below:
 https://ftp.dimensiondata.com/mirrors/www.apache.org/drill
 ```
 
+### Docker image release notes
+
+| Version  | Release notes |
+| ------------- | ------------- |
+| 1.21.2-latest  | Upgraded to from openjdk-17-jdk to openjdk-21-jdk, azure-storage to 8.6.6, hadoop-azure to 3.4.0 |
+
 Navigate to the ```drill``` directory
 ```
 cd drill
