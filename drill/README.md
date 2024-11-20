@@ -7,7 +7,7 @@ https://ftp.dimensiondata.com/mirrors/www.apache.org/drill
 
 | Version  | Release notes |
 | ------------- | ------------- |
-| 1.21.2-latest  | Upgraded to from openjdk-17-jdk to openjdk-21-jdk, azure-storage to 8.6.6, hadoop-azure to 3.4.0 |
+| 1.21.2-latest  | Upgraded to the following:  Drill 1.21.2, openjdk-21-jdk, azure-storage-8.6.6, hadoop-azure-3.4.0 |
 
 Navigate to the ```drill``` directory
 ```
