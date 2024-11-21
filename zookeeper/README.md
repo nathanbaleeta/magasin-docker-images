@@ -37,10 +37,7 @@ docker buildx create tls-environment \
 ```
 
 Run build & push script
-For example:
 ```
-
-
 build_upload_image.sh -r myregistry.azurecr.io -t zookeeper -v 3.7.2
 ```
 ## Alternatively:
