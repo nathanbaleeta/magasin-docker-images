@@ -42,7 +42,7 @@ Syntax: scriptTemplate [-r|t|v]
 options:
 r - Specify container registry.
 t - Specify docker image tag.
-v - Specify docker image version. See available versions [here](https://ftp.dimensiondata.com/mirrors/www.apache.org/zookeeper/)
+v - Specify docker image version. See available versions - https://ftp.dimensiondata.com/mirrors/www.apache.org/zookeeper/
 ```
 ```
 build_upload_image.sh -r myregistry.azurecr.io -t zookeeper -v 3.7.2
