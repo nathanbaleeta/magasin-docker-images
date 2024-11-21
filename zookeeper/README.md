@@ -37,6 +37,11 @@ docker buildx create tls-environment \
 ```
 
 Run build & push script
+Syntax: scriptTemplate [-r|t|v]
+options:
+r - Specify container registry.
+t - Specify docker image tag.
+v - Specify docker image version.
 ```
 build_upload_image.sh -r myregistry.azurecr.io -t zookeeper -v 3.7.2
 ```
