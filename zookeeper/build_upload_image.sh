@@ -1,9 +1,5 @@
 #!/bin/bash
 
-# https://www.redhat.com/en/blog/arguments-options-bash-scripts
-# https://medium.com/@max.kombarov/automating-bash-script-installation-and-docker-build-and-verification-in-ci-cd-by-qa-7210f536daf8
-# https://github.com/nathanbaleeta/magasin-docker-images/tree/main/zookeeper
-
 ############################################################
 # Help                                                     #
 ############################################################
