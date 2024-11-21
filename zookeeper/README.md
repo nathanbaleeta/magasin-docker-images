@@ -4,6 +4,11 @@
 ```
 https://ftp.dimensiondata.com/mirrors/www.apache.org/zookeeper/
 ```
+
+### Add permissions to build scripts to make executable
+```
+chmod +x build_upload_image.sh
+```
 ### Docker image release notes
 
 | Version  | Release notes |
