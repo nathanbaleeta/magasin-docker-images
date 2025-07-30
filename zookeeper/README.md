@@ -50,7 +50,7 @@ build_upload_image.sh -r myregistry.azurecr.io -t zookeeper -v 3.7.2
 ## Alternatively:
 #### Execute manually
 ```
- docker buildx build --platform linux/amd64 -t magasinacrdev.azurecr.io/zookeeper:3.7.2 --push .
+ docker buildx build --platform linux/amd64 -t baleetanathanacrdev.azurecr.io/zookeeper:3.7.2 --push .
 ```
 OR
 ```
