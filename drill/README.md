@@ -43,5 +43,5 @@ docker buildx build --platform linux/amd64 -t baleetanathanacrdev.azurecr.io/dri
 
 #### Import docker hub image into Azure container registry
 ```
-az acr import --name magasinacrdev --source docker.io/nbaleeta/drill:1.21.1 --image drill:1.21.1
+az acr import --name baleetanathanacrdev --source docker.io/nbaleeta/drill:1.21.1 --image drill:1.21.1
 ```
