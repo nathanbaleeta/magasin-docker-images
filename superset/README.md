@@ -28,12 +28,12 @@ docker run -p 8088:8088 superset
 #### Build image from docker-compose - not recommended for production
 #### Use bake with -f flag to specify which Docker Compose, JSON or HCL file to read from, then build image after
 ```
- docker buildx build -f docker-compose-non-dev.yml --platform linux/amd64 -t magasinacrdev.azurecr.io/superset:3.1.0 --push .
+ docker buildx build -f docker-compose-non-dev.yml --platform linux/amd64 -t baleetanathanacrdev.azurecr.io/superset:3.1.0 --push .
 ```
 
 OR
 ```
 docker buildx bake -f docker-compose-non-dev.yml
 
-docker buildx build --platform linux/amd64 -t magasinacrdev.azurecr.io/superset:3.1.0 --push .
+docker buildx build --platform linux/amd64 -t baleetanathanacrdev.azurecr.io/superset:3.1.0 --push .
 ```
